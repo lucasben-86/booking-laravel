@@ -1,10 +1,31 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos creados</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-size: 0.8rem;
+        }
+
+        h2 {
+            color: #ffc107;
+            text-align: left;
+            font-size: 1.25rem;
+        }
+
+        th {
+            background-color: #ffc107;
+            color: #343a40;
+            font-size: 0.8rem;
+        }
+
+        .table {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <div class="container mt-5">

@@ -5,6 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar trabajo</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-size: 0.8rem;
+        }
+
+        h2 {
+            color: #ffc107;
+            text-align: left;
+            font-size: 1.25rem;
+        }
+
+        .form-group {
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group label {
+            color: #343a40;
+            font-size: 0.8rem;
+        }
+
+        .form-control {
+            max-width: 50%;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <div class="container mt-5">
@@ -54,6 +87,5 @@
             <button type="submit" value="Agregar nuevo PID" class="btn btn-primary">Enviar</button>
         </form>
     </div>
-
 </body>
 </html>
