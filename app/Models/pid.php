@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Pid extends Model
 {
+    
     protected $table = 'pids';
 
     protected $fillable = [

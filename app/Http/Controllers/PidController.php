@@ -16,14 +16,12 @@ class PidController extends Controller
         return view('pids.index', $pid);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
+    public function pidcreate()
     {
-        //
+    return view('pids.pidcreate');
     }
-
+    
+    
     /**
      * Store a newly created resource in storage.
      */
