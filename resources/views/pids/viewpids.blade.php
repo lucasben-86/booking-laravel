@@ -58,6 +58,7 @@
                 @endforeach
             </tbody>
         </table>
+        <a href="{{ url('/') }}" class="btn btn-secondary mt-3">Volver</a>
     </div>
 </body>
 </html>
