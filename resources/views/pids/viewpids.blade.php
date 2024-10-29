@@ -2,7 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos creados</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
         <h2 class="mt-5">Eventos creados</h2>
         <table class="table table-bordered mt-3">
             <thead>
@@ -31,10 +36,7 @@
                 </tr>
                 @endforeach
             </tbody>
-        </table>, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+        </table>
+    </div>
 </body>
 </html>

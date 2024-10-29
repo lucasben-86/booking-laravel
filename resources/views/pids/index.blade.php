@@ -26,7 +26,7 @@
 <div class="container mt-5">
         <h2>Procesos disponibles</h2>
         <div class="btn-container mt-4">
-            <a href="{{ url('/events') }}" class="btn btn-custom">Lista de trabajos</a>
+            <a href="{{ url('/list') }}" class="btn btn-custom">Lista de trabajos</a>
             <a href="{{ url('/create') }}" class="btn btn-custom">Iniciar trabajo</a>
         </div>
     </div>

@@ -20,8 +20,14 @@ class PidController extends Controller
     {
     return view('pids.pidcreate');
     }
+
+    public function viewpids()
+    {
+        $data['pids'] = Pid::all(); 
+        return view('pids.viewpids', $data);
+    }
     
-    
+
     /**
      * Store a newly created resource in storage.
      */
