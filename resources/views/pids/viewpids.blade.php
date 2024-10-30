@@ -43,6 +43,7 @@
                     <th>Descripción del Evento</th>
                 </tr>
             </thead>
+
             <tbody>
                 @foreach($pids as $pid)
                 <tr>

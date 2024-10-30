@@ -49,6 +49,13 @@
 <body>
     <div class="container mt-5">
         <h2>Detalles del Evento</h2>
+
+        @if(session('success'))
+            <div class="alert alert-success">
+                {{ session('success') }}
+            </div>
+        @endif
+
         <table class="table table-bordered mt-3">
             <tbody>
                 <tr>
@@ -85,7 +92,12 @@
                 </tr>
             </tbody>
         </table>
-        <a href="{{ url('/list') }}" class="btn btn-secondary mt-3">Volver</a>
+        <form action="{{ route('pids.destroy', $pid->id) }}" method="POST" class="mt-4">
+            @csrf
+            @method('DELETE')
+            <button type="submit" class="btn btn-danger me-5 pl-2">Eliminar</button>
+            <a href="{{ url('/list') }}" class="btn btn-secondary">Volver</a>
+        </form>
     </div>
 </body>
 </html>

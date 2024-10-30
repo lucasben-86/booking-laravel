@@ -62,16 +62,19 @@ class PidController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, pid $pid)
+    public function update(Request $request, $id)
     {
-        //
+
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(pid $pid)
+    public function destroy($id)
     {
-        //
+        $pid = Pid::findOrFail($id);
+        $pid->delete();
+    
+        return redirect('/list')->with('success', 'El evento ha sido eliminado correctamente.');
     }
 }
