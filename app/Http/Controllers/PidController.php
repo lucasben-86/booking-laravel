@@ -27,6 +27,11 @@ class PidController extends Controller
         return view('pids.viewpids', $data);
     }
     
+    public function detailedpid($id)
+    {
+        $pid = Pid::findOrFail($id); 
+        return view('pids.detailedpid', compact('pid')); 
+    }   
 
     /**
      * Store a newly created resource in storage.

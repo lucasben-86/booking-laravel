@@ -46,7 +46,7 @@
             <tbody>
                 @foreach($pids as $pid)
                 <tr>
-                    <td>{{ $pid->id }}</td>
+                    <td><a href="{{ route('pids.detailedpid', $pid->id) }}">{{ $pid->id }}</a></td>
                     <td>{{ $pid->created_at->format('d-m-Y') }}</td>
                     <td>{{ $pid->tipo_transmision }}</td>
                     <td>{{ $pid->fecha_inicial }}</td>
