@@ -13,8 +13,6 @@ return new class extends Migration
     {
         Schema::create('pids', function (Blueprint $table) {
             $table->id();
-            $table->integer('pid')->comment('PID');
-            $table->date('creacion')->comment('Creación');
             $table->string('tipo_transmision')->comment('Tipo de transmisión');
             $table->date('fecha_inicial')->comment('Fecha inicial');
             $table->date('fecha_final')->comment('Fecha final');

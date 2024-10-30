@@ -46,8 +46,8 @@
             <tbody>
                 @foreach($pids as $pid)
                 <tr>
-                    <td>{{ $pid->pid }}</td>
-                    <td>{{ $pid->creacion }}</td>
+                    <td>{{ $pid->id }}</td>
+                    <td>{{ $pid->created_at->format('d-m-Y') }}</td>
                     <td>{{ $pid->tipo_transmision }}</td>
                     <td>{{ $pid->fecha_inicial }}</td>
                     <td>{{ $pid->fecha_final }}</td>

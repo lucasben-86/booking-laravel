@@ -45,16 +45,6 @@
         <form action="{{ url('/') }}" method="POST">
             @csrf
             <div class="form-group">
-                <label for="pid">PID:</label>
-                <input type="number" name="pid" id="pid" class="form-control" required>
-            </div>
-
-            <div class="form-group">
-                <label for="creacion">Creación:</label>
-                <input type="date" name="creacion" id="creacion" class="form-control" required>
-            </div>
-
-            <div class="form-group">
                 <label for="tipo_transmision">Tipo de transmisión:</label>
                 <input type="text" name="tipo_transmision" id="tipo_transmision" class="form-control" required>
             </div>
